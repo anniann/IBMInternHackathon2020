@@ -27,7 +27,6 @@ class ProgressGauge extends React.Component {
     }
 
     render() {
-        
         return (
             <GaugeChart
                 data={this.state.data}
