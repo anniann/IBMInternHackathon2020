@@ -1,14 +1,17 @@
 import React from 'react';
-import Search20 from "@carbon/icons-react/lib/search/20";
-import Notification20 from "@carbon/icons-react/lib/notification/20";
-import AppSwitcher20 from "@carbon/icons-react/lib/app-switcher/20";
+import { Email20 } from "@carbon/icons-react";
+import { User20 } from "@carbon/icons-react";
+import { Fade16 } from "@carbon/icons-react";
+import { Search20 } from "@carbon/icons-react";
 import HeaderContainer from "carbon-components-react/lib/components/UIShell/HeaderContainer";
+import ToolbarSearch from "carbon-components-react/lib/components/ToolbarSearch";
 import {
     Header,
     HeaderMenuButton,
     HeaderName,
     HeaderGlobalBar,
     HeaderGlobalAction,
+    Search,
     SkipToContent,
     SideNav,
     SideNavItems,
@@ -22,76 +25,39 @@ const UIShell = () => (
         <HeaderContainer
         render={({ isSideNavExpanded, onClickSideNavExpand }) => (
             <>
-            <Header aria-label="IBM Platform Name">
-                <SkipToContent />
+            <Header>
                 <HeaderMenuButton
                 aria-label="Open menu"
                 onClick={onClickSideNavExpand}
                 isActive={isSideNavExpanded}
                 />
-                <HeaderName href="#" prefix="IBM">
-                [Platform]
+                <HeaderName href="#" prefix="">
+                HydroHub
                 </HeaderName>
                 <HeaderGlobalBar>
-                <HeaderGlobalAction aria-label="Search" onClick={() => {}}>
+                <HeaderGlobalAction aria-label="Messages" onClick={() => {}}>
                     <Search20 />
                 </HeaderGlobalAction>
-                <HeaderGlobalAction aria-label="Notifications" onClick={() => {}}>
-                    <Notification20 />
+                <HeaderGlobalAction aria-label="Messages" onClick={() => {}}>
+                    <Email20 />
                 </HeaderGlobalAction>
-                <HeaderGlobalAction aria-label="App Switcher" onClick={() => {}}>
-                    <AppSwitcher20 />
+                <HeaderGlobalAction aria-label="Profile" onClick={() => {}}>
+                    <User20 />
                 </HeaderGlobalAction>
                 </HeaderGlobalBar>
-                <SideNav aria-label="Side navigation" expanded={isSideNavExpanded}>
+                <SideNav aria-label="Side navigation" isRail expanded={isSideNavExpanded}>
                 <SideNavItems>
-                    <SideNavMenu title="Category title">
-                    <SideNavMenuItem href="javascript:void(0)">
-                        Link
-                    </SideNavMenuItem>
-                    <SideNavMenuItem
-                        aria-current="page"
-                        href="javascript:void(0)"
-                    >
-                        Link
-                    </SideNavMenuItem>
-                    <SideNavMenuItem href="javascript:void(0)">
-                        Link
-                    </SideNavMenuItem>
-                    </SideNavMenu>
-                    <SideNavMenu title="Category title">
-                    <SideNavMenuItem href="javascript:void(0)">
-                        Link
-                    </SideNavMenuItem>
-                    <SideNavMenuItem
-                        aria-current="page"
-                        href="javascript:void(0)"
-                    >
-                        Link
-                    </SideNavMenuItem>
-                    <SideNavMenuItem href="javascript:void(0)">
-                        Link
-                    </SideNavMenuItem>
-                    </SideNavMenu>
-                    <SideNavMenu title="Category title">
-                    <SideNavMenuItem href="javascript:void(0)">
-                        Link
-                    </SideNavMenuItem>
-                    <SideNavMenuItem
-                        aria-current="page"
-                        href="javascript:void(0)"
-                    >
-                        Link
-                    </SideNavMenuItem>
-                    <SideNavMenuItem href="javascript:void(0)">
-                        Link
-                    </SideNavMenuItem>
-                    </SideNavMenu>
-                    <SideNavLink href="javascript:void(0)">
-                    Link
+                    <SideNavLink renderIcon={Fade16} href="javascript:void(0)">
+                    Dashboard
                     </SideNavLink>
-                    <SideNavLink href="javascript:void(0)">
-                    Link
+                    <SideNavLink renderIcon={Fade16} href="javascript:void(0)">
+                    Causes
+                    </SideNavLink>
+                    <SideNavLink renderIcon={Fade16} href="javascript:void(0)">
+                    World Map
+                    </SideNavLink>
+                    <SideNavLink renderIcon={Fade16} href="javascript:void(0)">
+                    Transaction History
                     </SideNavLink>
                 </SideNavItems>
                 </SideNav>
