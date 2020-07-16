@@ -118,9 +118,9 @@ const DonorDashboard = () => {
                 <div className="bx--row donor-dashboard__recent-donations">
                     <h2 style={{marginTop: "40px", marginLeft: "35px", marginBottom: "15px"}}>Recent Donations</h2>
                 </div>
-                <div style={{marginLeft: "30px"}} className="bx--row donor-dashboard__recent-donation-org">
+                <div style={{marginLeft: "30px", marginBottom: "200px"}} className="bx--row donor-dashboard__recent-donation-org">
                     <Tile>
-                        <div style={{ height: "225px", width: "1000px"}}>
+                        <div style={{ height: "150px", width: "1000px"}}>
                             <h2>Local Clinic</h2>
                             <hr/>
                             <h4>Your Contribution:</h4><br/>
