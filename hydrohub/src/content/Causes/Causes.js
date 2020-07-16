@@ -4,52 +4,60 @@ import { UnorderedList, ListItem } from "carbon-components-react";
 import { ModalWrapper } from "carbon-components-react";
 import AnalyticsNum from "../../components/AnalyticsNum";
 import UIShell from "../../components/UIShell";
-import Carousel from 'react-bootstrap/Carousel';
+import Carousel from "react-bootstrap/Carousel";
 
 const Causes = () => {
   return (
     <div>
       <UIShell />
-      <div className="bx--grid bx--grid--full-width donor-dashboard"></div>
-      <Carousel>
-        <Carousel.Item>
-          <img
-            className="d-block w-100"
-            src="https://eskipaper.com/images/field-background-1.jpg"
-            alt="First slide"
-          />
-          <Carousel.Caption>
-            <h3>First slide label</h3>
-            <p>Nulla vitae elit libero, a pharetra augue mollis interdum.</p>
-          </Carousel.Caption>
-        </Carousel.Item>
-        <Carousel.Item>
-          <img
-            className="d-block w-100"
-            src="https://eskipaper.com/images/field-background-1.jpg"
-            alt="Third slide"
-          />
+      <div>
+        <div class="container" style={{marginTop: "70px"}}>
+          <div className="row title" style={{ marginBottom: "20px" }}>
+            <div class="col-sm-12 btn btn-warning">
+              Top Causes
+            </div>
+          </div>
+        </div>
 
-          <Carousel.Caption>
-            <h3>Second slide label</h3>
-            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
-          </Carousel.Caption>
-        </Carousel.Item>
-        <Carousel.Item>
-          <img
-            className="d-block w-100"
-            src="https://eskipaper.com/images/field-background-1.jpg"
-            alt="Third slide"
-          />
+        <div className="container-fluid">
+          <Carousel>
+            <Carousel.Item style={{ height: "500px" }}>
+              <img
+                style={{ height: "500px" }}
+                className="d-block w-100"
+                src={"https://eskipaper.com/images/field-background-1.jpg"}
+              />
 
-          <Carousel.Caption>
-            <h3>Third slide label</h3>
-            <p>
-              Praesent commodo cursus magna, vel scelerisque nisl consectetur.
-            </p>
-          </Carousel.Caption>
-        </Carousel.Item>
-      </Carousel>
+              <Carousel.Caption>
+                <h3>First Demo </h3>
+              </Carousel.Caption>
+            </Carousel.Item>
+            <Carousel.Item style={{ height: "500px" }}>
+              <img
+                style={{ height: "500px" }}
+                className="d-block w-100"
+                src={"https://eskipaper.com/images/field-background-1.jpg"}
+              />
+
+              <Carousel.Caption>
+                <h3>Second Demo</h3>
+              </Carousel.Caption>
+            </Carousel.Item>
+
+            <Carousel.Item style={{ height: "500px" }}>
+              <img
+                style={{ height: "500px" }}
+                className="d-block w-100"
+                src={"https://eskipaper.com/images/field-background-1.jpg"}
+              />
+
+              <Carousel.Caption>
+                <h3>Third Demo</h3>
+              </Carousel.Caption>
+            </Carousel.Item>
+          </Carousel>
+        </div>
+      </div>
     </div>
   );
 };
