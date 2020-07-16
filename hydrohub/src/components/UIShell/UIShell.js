@@ -37,9 +37,11 @@ const UIShell = () => (
                 <NavLink to="/"> HydroHub </NavLink>
                 </HeaderName>
                 <HeaderGlobalBar>
+                <NavLink to="/search" style={{ fontWeight: "bold", color: "#4287f5"}}>
                 <HeaderGlobalAction aria-label="Search" onClick={() => {}}>
                     <Search20 />
                 </HeaderGlobalAction>
+                </NavLink>
                 <NavLink to="/messages" style={{ fontWeight: "bold", color: "#4287f5"}}>
                     <HeaderGlobalAction aria-label="Messages" onClick={() => {}}>
                         <Email20 />
@@ -54,13 +56,13 @@ const UIShell = () => (
                 <SideNav aria-label="Side navigation" isRail expanded={isSideNavExpanded}>
                 <SideNavItems>
                     <SideNavLink renderIcon={Fade16} href="javascript:void(0)">
-                    Causes
+                    <NavLink to="/causes">Causes</NavLink>
                     </SideNavLink>
                     <SideNavLink renderIcon={Fade16} href="javascript:void(0)">
-                    <NavLink to="/world-map"> World Map </NavLink>
+                    <NavLink to="/world-map">World Map</NavLink>
                     </SideNavLink>
                     <SideNavLink renderIcon={Fade16} href="javascript:void(0)">
-                    Transaction History
+                    <NavLink to="/transaction-history">Transaction History</NavLink>
                     </SideNavLink>
                 </SideNavItems>
                 </SideNav>

@@ -13,8 +13,11 @@ import UIShell from './components/UIShell';
 import OrgDashboard from './content/OrgDashboard';
 import DonorDashboard from './content/DonorDashboard';
 import LandingPage from './content/LandingPage';
-import Messages from './content/Messages'
-import WorldMap from './content/WorldMap'
+import Messages from './content/Messages';
+import WorldMap from './content/WorldMap';
+import Transactions from './content/Transactions';
+import Causes from './content/Causes';
+import Search from './content/Search';
 
 
 function App() {
@@ -28,6 +31,9 @@ function App() {
            <Route exact path="/donordashboard" component={DonorDashboard} />
            <Route exact path="/messages" component={Messages} />
            <Route exact path="/world-map" component={WorldMap} />
+           <Route exact path="/causes" component={Causes} />
+           <Route exact path="/transaction-history" component={Transactions} />
+           <Route exact path="/search" component={Search} />
         </Router>
       </div>
 

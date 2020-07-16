@@ -14,7 +14,7 @@ const OrgDashboard = () => {
             <div className="bx--row org-dashboard__org-name">
                 <div className="bx--col-lg-16">
                     <br/><br/>
-                    <h1 style={{paddingLeft: "75px", marginTop: "50px"}} align="center">Company Name's Dashboard</h1>
+                    <h1 style={{paddingLeft: "75px", marginTop: "50px"}} align="center">Health Clinic Dashboard</h1>
                 </div>
             </div>
             <div className="bx--row org-dashboard__total-prog-gauge">

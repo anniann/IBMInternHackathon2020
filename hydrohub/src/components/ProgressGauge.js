@@ -8,12 +8,12 @@ class ProgressGauge extends React.Component {
             data: [
                 {
                     "group": "value",
-                    "value": 67
+                    "value": 99
                 }
             ],
             options: {
                 "resizable": true,
-                "height": "285px",
+                "height": "200px",
                 "gauge": {
                     "type": "full"
                 },
