@@ -29,7 +29,7 @@ const Landing = () => (
         <ul>
           <li>
             {" "}
-            Addressing supply chain shortage<br></br> for clinics worldwide.
+            Addressing supply chain shortages <br></br> for local organizations worldwide.
           </li>
         </ul>
       </section>
