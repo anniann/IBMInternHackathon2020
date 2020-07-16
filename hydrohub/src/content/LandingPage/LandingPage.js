@@ -2,7 +2,7 @@ import React from "react";
 import HeaderContainer from "carbon-components-react/lib/components/UIShell/HeaderContainer";
 import Button from "carbon-components-react/lib/components/Button";
 import "./LandingPage.scss";
-import { NavLink } from "react-router-dom";
+import { Link } from "react-router-dom";
 
 const Landing = () => (
   <div
@@ -42,7 +42,7 @@ const Landing = () => (
             {" "}
             <Button kind="tertiary">
               {" "}
-              <NavLink to="/donor-dashboard" style={{ fontWeight: "bold", color: "#4287f5"}}> Donator Dashboard </NavLink>
+              <Link to="/donor-dashboard" style={{ fontWeight: "bold", color: "#4287f5"}}> Donator Dashboard </Link>
             </Button>{" "}
           </li>
         </ul>
@@ -55,7 +55,7 @@ const Landing = () => (
             {" "}
             <Button kind="tertiary">
               {" "}
-              <NavLink to="/organization-dashboard" style={{ fontWeight: "bold", color: "#4287f5"}}> Organization Dashboard </NavLink>
+              <Link to="/organization-dashboard" style={{ fontWeight: "bold", color: "#4287f5"}}> Organization Dashboard </Link>
             </Button>{" "}
           </li>
         </ul>
