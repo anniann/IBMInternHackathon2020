@@ -1,5 +1,5 @@
 import React from 'react';
-import './App.scss';
+import './app.scss';
 import Progress from "./components/UIShell";
 import { Content } from 'carbon-components-react/lib/components/UIShell';
 import {
@@ -9,24 +9,22 @@ import {
   Link
 } from "react-router-dom";
 import UIShell from './components/UIShell';
-import OrgDashboard from './content/OrgDashboard'
-import './content/OrgDashboard/org-dashboard.scss'
+import OrgDashboard from './content/OrgDashboard';
+import DonorDashboard from './content/DonorDashboard';
 import Button from 'carbon-components-react/lib/components/Button';
 
 function App() {
   return (
-    <Router>
       <div className="App">
         {/* <UIShell /> */}
          
-         <Switch>
-           <Route path="/">
-             <Home />
-           </Route>
-         </Switch>
-         </div>
-      
-      </Router>
+        <Router>
+           <Route exact path="/" component={Home} />
+           <Route exact path="/organizationdashboard" component={OrgDashboard} />
+           <Route exact path="/donordashboard" component={DonorDashboard} />
+        </Router>
+      </div>
+
 
     );
   }
