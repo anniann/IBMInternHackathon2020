@@ -1,4 +1,5 @@
 import React from 'react';
+import { NavLink } from 'react-router-dom'
 import './app.scss';
 import Progress from "./components/UIShell";
 import { Content } from 'carbon-components-react/lib/components/UIShell';
@@ -12,6 +13,7 @@ import UIShell from './components/UIShell';
 import OrgDashboard from './content/OrgDashboard';
 import DonorDashboard from './content/DonorDashboard';
 import Button from 'carbon-components-react/lib/components/Button';
+
 
 function App() {
   return (
@@ -54,7 +56,7 @@ function Home() {
         <div className="right">
           <section className="right-item">
             <ul>
-              <li> <Button kind="primary"> Donator Dashboard </Button> </li>
+              <li>  <Button kind="primary" onClick=""> <NavLink to="/donordashboard">Donor Dashboard </NavLink></Button> </li>
               </ul>
             </section>
           
@@ -62,7 +64,7 @@ function Home() {
           <div className="right2">
             <section className="right-item">
               <ul>
-                <li> <Button kind="secondary"> Organization Dashboard</Button> </li>
+              <li>  <Button kind="primary" onClick=""> <NavLink to="/organizationdashboard">Organization Dashboard </NavLink></Button> </li>
                 </ul>
                 </section>
           </div>

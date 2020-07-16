@@ -5,12 +5,7 @@ import { ModalWrapper } from "carbon-components-react";
 import AnalyticsNum from "../../components/AnalyticsNum";
 import UIShell from "../../components/UIShell"
 
-class DonorDashboard extends React.Component {
-    constructor() {
-        super()
-    }
-
-    render() {
+const DonorDashboard = () => {
         return (
             <div>
             <UIShell />
@@ -145,7 +140,6 @@ class DonorDashboard extends React.Component {
             </div>
             </div>
         )
-    }
 }
 
 export default DonorDashboard
