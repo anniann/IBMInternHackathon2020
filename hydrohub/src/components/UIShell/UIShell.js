@@ -47,7 +47,7 @@ const UIShell = () => (
                         <Email20 />
                     </HeaderGlobalAction>
                 </NavLink>
-                <NavLink to="/donordashboard" style={{ fontWeight: "bold", color: "#4287f5"}}>
+                <NavLink to="/donor-dashboard" style={{ fontWeight: "bold", color: "#4287f5"}}>
                     <HeaderGlobalAction aria-label="Profile" onClick={() => {}}>
                     <User20 />
                     </HeaderGlobalAction>
