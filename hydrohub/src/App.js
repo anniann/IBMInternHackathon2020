@@ -27,8 +27,8 @@ function App() {
         
         <Router>
            <div className="App"><Route exact path="/" component={LandingPage} /></div>
-           <Route exact path="/organizationdashboard" component={OrgDashboard} />
-           <Route exact path="/donordashboard" component={DonorDashboard} />
+           <Route exact path="/organization-dashboard" component={OrgDashboard} />
+           <Route exact path="/donor-dashboard" component={DonorDashboard} />
            <Route exact path="/messages" component={Messages} />
            <Route exact path="/world-map" component={WorldMap} />
            <Route exact path="/causes" component={Causes} />
