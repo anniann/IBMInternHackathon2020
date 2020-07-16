@@ -40,9 +40,9 @@ const Landing = () => (
         <ul>
           <li>
             {" "}
-            <Button kind="primary">
+            <Button kind="tertiary">
               {" "}
-              <NavLink to="/donordashboard"> Donator Dashboard </NavLink>
+              <NavLink to="/donordashboard" style={{ fontWeight: "bold", color: "red"}}> Donator Dashboard </NavLink>
             </Button>{" "}
           </li>
         </ul>
@@ -53,9 +53,9 @@ const Landing = () => (
         <ul>
           <li>
             {" "}
-            <Button kind="primary">
+            <Button kind="tertiary">
               {" "}
-              <NavLink to="/organizationdashboard"> Organization Dashboard </NavLink>
+              <NavLink to="/organizationdashboard" style={{ fontWeight: "bold", color: "red"}}> Organization Dashboard </NavLink>
             </Button>{" "}
           </li>
         </ul>
