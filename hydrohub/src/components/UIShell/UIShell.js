@@ -36,9 +36,6 @@ const UIShell = () => (
                 <HeaderName href="#" prefix="">
                 <NavLink to="/"> HydroHub </NavLink>
                 </HeaderName>
-                <Link>
-                Dashboard
-                </Link>
                 <HeaderGlobalBar>
                 <HeaderGlobalAction aria-label="Search" onClick={() => {}}>
                     <Search20 />
@@ -47,6 +44,7 @@ const UIShell = () => (
                     <Email20 />
                 
                 <HeaderGlobalAction aria-label="Profile" onClick={() => {}}>
+                    <NavLink to="/donordashboard" style={{ fontWeight: "bold", color: "#4287f5"}}><HeaderGlobalAction aria-label="Messages" onClick={() => {}}></HeaderGlobalAction></NavLink>
                     <User20 />
                 </HeaderGlobalAction>
                 </HeaderGlobalBar>

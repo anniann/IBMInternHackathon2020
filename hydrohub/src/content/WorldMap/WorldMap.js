@@ -1,12 +1,12 @@
 import React from "react";
 import MapChart from "./MapChart";
+import UIShell from "../../components/UIShell"
 
 const WorldMap = () => {
   return (
-    <div class="bx--grid">
-      {/* <div class="bx--row"> */}
+    <div class="">
+        <UIShell />
         <MapChart />
-      {/* </div> */}
     </div>
   );
 };

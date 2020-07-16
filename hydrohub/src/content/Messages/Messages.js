@@ -1,9 +1,11 @@
 import React from "react";
 import { ChatList } from "react-chat-elements";
+import UIShell from "../../components/UIShell"
 
 const Messages = () => {
   return (
     <div>
+      <UIShell />
       <ChatList
         className="chat-list"
         dataSource={[
