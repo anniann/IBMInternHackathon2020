@@ -40,13 +40,16 @@ const UIShell = () => (
                 <HeaderGlobalAction aria-label="Search" onClick={() => {}}>
                     <Search20 />
                 </HeaderGlobalAction>
-                <NavLink to="/messages" style={{ fontWeight: "bold", color: "#4287f5"}}><HeaderGlobalAction aria-label="Messages" onClick={() => {}}>Messages</HeaderGlobalAction></NavLink>
-                    <Email20 />
-                
-                <HeaderGlobalAction aria-label="Profile" onClick={() => {}}>
-                    <NavLink to="/donordashboard" style={{ fontWeight: "bold", color: "#4287f5"}}><HeaderGlobalAction aria-label="Messages" onClick={() => {}}></HeaderGlobalAction></NavLink>
+                <NavLink to="/messages" style={{ fontWeight: "bold", color: "#4287f5"}}>
+                    <HeaderGlobalAction aria-label="Messages" onClick={() => {}}>
+                        <Email20 />
+                    </HeaderGlobalAction>
+                </NavLink>
+                <NavLink to="/donordashboard" style={{ fontWeight: "bold", color: "#4287f5"}}>
+                    <HeaderGlobalAction aria-label="Profile" onClick={() => {}}>
                     <User20 />
-                </HeaderGlobalAction>
+                    </HeaderGlobalAction>
+                </NavLink>
                 </HeaderGlobalBar>
                 <SideNav aria-label="Side navigation" isRail expanded={isSideNavExpanded}>
                 <SideNavItems>
