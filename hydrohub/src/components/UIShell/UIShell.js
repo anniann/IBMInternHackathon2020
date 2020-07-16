@@ -3,6 +3,7 @@ import { Email20 } from "@carbon/icons-react";
 import { User20 } from "@carbon/icons-react";
 import { Fade16 } from "@carbon/icons-react";
 import { Search20 } from "@carbon/icons-react";
+import { Link } from "carbon-components-react";
 import HeaderContainer from "carbon-components-react/lib/components/UIShell/HeaderContainer";
 import ToolbarSearch from "carbon-components-react/lib/components/ToolbarSearch";
 import {
@@ -34,8 +35,11 @@ const UIShell = () => (
                 <HeaderName href="#" prefix="">
                 HydroHub
                 </HeaderName>
+                <Link>
+                Dashboard
+                </Link>
                 <HeaderGlobalBar>
-                <HeaderGlobalAction aria-label="Messages" onClick={() => {}}>
+                <HeaderGlobalAction aria-label="Search" onClick={() => {}}>
                     <Search20 />
                 </HeaderGlobalAction>
                 <HeaderGlobalAction aria-label="Messages" onClick={() => {}}>
@@ -47,9 +51,6 @@ const UIShell = () => (
                 </HeaderGlobalBar>
                 <SideNav aria-label="Side navigation" isRail expanded={isSideNavExpanded}>
                 <SideNavItems>
-                    <SideNavLink renderIcon={Fade16} href="javascript:void(0)">
-                    Dashboard
-                    </SideNavLink>
                     <SideNavLink renderIcon={Fade16} href="javascript:void(0)">
                     Causes
                     </SideNavLink>
