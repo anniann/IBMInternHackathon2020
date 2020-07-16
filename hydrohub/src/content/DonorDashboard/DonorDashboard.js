@@ -2,7 +2,8 @@ import React from "react"
 import { Tile } from "carbon-components-react";
 import { UnorderedList, ListItem } from "carbon-components-react";
 import { ModalWrapper } from "carbon-components-react";
-import AnalyticsNum from "../../components/AnalyticsNum"
+import AnalyticsNum from "../../components/AnalyticsNum";
+import UIShell from "../../components/UIShell"
 
 class DonorDashboard extends React.Component {
     constructor() {
@@ -11,6 +12,8 @@ class DonorDashboard extends React.Component {
 
     render() {
         return (
+            <div>
+            <UIShell />
             <div className="bx--grid bx--grid--full-width donor-dashboard">
                 <div className="bx--row donor-dashboard__your-dashboard">
                     <div className="bx--col-lg-16">
@@ -139,6 +142,7 @@ class DonorDashboard extends React.Component {
                         </div>
                     </Tile>
                 </div>
+            </div>
             </div>
         )
     }

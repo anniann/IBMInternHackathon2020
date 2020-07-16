@@ -1,11 +1,14 @@
 import React from "react"
 import { GaugeChart } from "@carbon/charts-react";
-import ProgressGauge from "../../components/ProgressGauge"
-import FilterSelect from "../../components/FilterSelect"
-import "./org-dashboard.scss"
+import ProgressGauge from "../../components/ProgressGauge";
+import FilterSelect from "../../components/FilterSelect";
+import UIShell from "../../components/UIShell";
+import "./org-dashboard.scss";
 
 const OrgDashboard = () => {
     return (
+        <div>
+        <UIShell />
         <div className="bx--grid bx--grid--full-width org-dashboard">
             <div className="bx--row org-dashboard__org-name">
                 <div className="bx--col-lg-16">
@@ -53,6 +56,7 @@ const OrgDashboard = () => {
                     <div style={{marginLeft: "15px", marginTop: "20px"}}><FilterSelect /></div>          
                 </div>
             </div>
+        </div>
         </div>
     )
 }
