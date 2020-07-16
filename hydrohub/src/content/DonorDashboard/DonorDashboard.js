@@ -17,14 +17,14 @@ const DonorDashboard = () => {
                     </div>
                 </div>
                 <div className="bx--row donor-dashboard__analytics-overview">
-                    <h2 style={{marginTop: "60px", marginLeft: "20px"}}>Analytics Overview</h2>
+                    <h2 style={{marginTop: "60px", marginLeft: "35px"}}>Analytics Overview</h2>
                 </div>
                 <div className="bx--row donor-dashboard__analytics-tiles" style={{marginTop: "30px"}}>
                     <div className="bx--col-lg-3">
                         <Tile>
                             <div style={{ height: '300px'}}>
-                                <p style={{fontSize: "25px", marginBottom: "5px", marginTop: "10px"}}>Donated to</p>
-                                <AnalyticsNum value="8" color="#c813cf" offset="95px"/>
+                                <p style={{fontSize: "25px", marginBottom: "5px", marginTop: "10px", marginLeft: "10px"}}>Donated to</p>
+                                <AnalyticsNum value="8" color="#c813cf" offset="110px"/>
                                 <p style={{fontSize: "25px", marginTop: "35px", marginLeft: "200px"}}>causes</p>
                             </div>
                         </Tile>
@@ -58,11 +58,11 @@ const DonorDashboard = () => {
                     </div>
                 </div>
                 <div className="bx--row donor-dashboard__analytics-overview">
-                    <h3 style={{marginTop: "40px", marginLeft: "20px"}}>You're doing great!</h3>
+                    <h3 style={{marginTop: "40px", marginLeft: "35px"}}>You're doing great!</h3>
                 </div>
                 <hr style={{marginTop: "60px"}}/>
                 <div className="bx--row donor-dashboard__your-inventory">
-                    <h2 style={{marginTop: "40px", marginLeft: "20px"}}>Your Inventory</h2>
+                    <h2 style={{marginTop: "40px", marginLeft: "35px"}}>Your Inventory</h2>
                 </div>
                 <div className="bx--row donor-dashboard__inventory details">
                     <div style={{marginTop: "15px", marginLeft: "50px"}}>
@@ -104,7 +104,7 @@ const DonorDashboard = () => {
                     </div>
                 </div>                
                 <div className="bx--row donor-dashboard__edit-inventory">
-                    <div style={{marginTop: "30px", marginLeft: "20px", fontSize: "30px"}}>
+                    <div style={{marginTop: "30px", marginLeft: "35px", fontSize: "30px"}}>
                         <ModalWrapper
                             buttonTriggerText="Edit Inventory"
                             modalHeading="Update your available resources"
@@ -116,12 +116,12 @@ const DonorDashboard = () => {
                 </div>
                 <hr style={{marginTop: "60px"}}/>
                 <div className="bx--row donor-dashboard__recent-donations">
-                    <h2 style={{marginTop: "40px", marginLeft: "20px", marginBottom: "15px"}}>Recent Donations</h2>
+                    <h2 style={{marginTop: "40px", marginLeft: "35px", marginBottom: "15px"}}>Recent Donations</h2>
                 </div>
-                <div className="bx--row donor-dashboard__recent-donation-org">
+                <div style={{marginLeft: "30px"}} className="bx--row donor-dashboard__recent-donation-org">
                     <Tile>
                         <div style={{ height: "225px", width: "1000px"}}>
-                            <h2>Local Hospital</h2>
+                            <h2>Local Clinic</h2>
                             <hr/>
                             <h4>Your Contribution:</h4><br/>
                             <div style={{marginLeft: "20px"}}>
@@ -130,7 +130,7 @@ const DonorDashboard = () => {
                                         20 gallons of water
                                     </ListItem>
                                     <ListItem>
-                                        100 masks
+                                        50 masks
                                     </ListItem>
                                 </UnorderedList>
                             </div>
