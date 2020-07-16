@@ -134,7 +134,7 @@ const Transactions = () => {
             <RowDefinition>
                 <ColumnDefinition id="id" title="id" width={200} />
                 <ColumnDefinition id="name" title="Name" width={200} />
-                <ColumnDefinition id="transactionType" title="Transacion Type"  width={200}/>
+                <ColumnDefinition id="transactionType" title="Transaction Type"  width={200}/>
                 <ColumnDefinition id="country" title="Country" width={200} />
                 <ColumnDefinition id="company" title="Company"  width={200}/>
             </RowDefinition>  
