@@ -37,32 +37,32 @@ const UIShell = () => (
                 <Link to="/" style={{ fontWeight: "bold", color: "#fff"}}> HydroHub </Link>
                 </HeaderName>
                 <HeaderGlobalBar>
-                <NavLink to="/search" style={{ fontWeight: "bold", color: "#4287f5"}}>
+                <Link to="/search" style={{ fontWeight: "bold", color: "#4287f5"}}>
                 <HeaderGlobalAction aria-label="Search" onClick={() => {}}>
                     <Search20 />
                 </HeaderGlobalAction>
-                </NavLink>
-                <NavLink to="/messages" style={{ fontWeight: "bold", color: "#4287f5"}}>
+                </Link>
+                <Link to="/messages" style={{ fontWeight: "bold", color: "#4287f5"}}>
                     <HeaderGlobalAction aria-label="Messages" onClick={() => {}}>
                         <Email20 />
                     </HeaderGlobalAction>
-                </NavLink>
-                <NavLink to="/donordashboard" style={{ fontWeight: "bold", color: "#4287f5"}}>
+                </Link>
+                <Link to="/donordashboard" style={{ fontWeight: "bold", color: "#4287f5"}}>
                     <HeaderGlobalAction aria-label="Profile" onClick={() => {}}>
                     <User20 />
                     </HeaderGlobalAction>
-                </NavLink>
+                </Link>
                 </HeaderGlobalBar>
                 <SideNav aria-label="Side navigation" isRail expanded={isSideNavExpanded}>
                 <SideNavItems>
                     <SideNavLink renderIcon={Fade16} href="javascript:void(0)">
-                    <NavLink to="/causes">Causes</NavLink>
+                    <Link href="/causes">Causes</Link>
                     </SideNavLink>
                     <SideNavLink renderIcon={Fade16} href="javascript:void(0)">
-                    <NavLink to="/world-map">World Map</NavLink>
+                    <Link href="/world-map">World Map</Link>
                     </SideNavLink>
                     <SideNavLink renderIcon={Fade16} href="javascript:void(0)">
-                    <NavLink to="/transaction-history">Transaction History</NavLink>
+                    <Link href="/transaction-history">Transaction History</Link>
                     </SideNavLink>
                 </SideNavItems>
                 </SideNav>

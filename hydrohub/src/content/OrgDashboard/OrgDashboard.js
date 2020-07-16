@@ -20,7 +20,7 @@ const OrgDashboard = () => {
             <div className="bx--row org-dashboard__total-prog-gauge">
                 <div className="bx--col-lg-5"/>
                 <div className="bx--col-lg-4">
-                    <h2 style={{marginLeft: "40px", marginTop: "30px"}}>Total Progress</h2>
+                    <h2 style={{marginLeft: "0px", marginTop: "30px"}}>Total Progress</h2>
                     <br/><br/>
                     <ProgressGauge />
                     <br/><br/>
@@ -29,15 +29,15 @@ const OrgDashboard = () => {
             <div className="bx--row org-dashboard__breakdown-prog">
                 <div className="bx--col-lg-2"/>
                 <div className="bx--col-lg-3">
-                    <h3 style={{marginLeft: "105px", marginTop: "20px"}}>Water</h3><br/>
+                    <h3 style={{marginLeft: "65px", marginTop: "20px"}}>Water</h3><br/>
                     <ProgressGauge />
                 </div>
                 <div className="bx--col-lg-3">
-                    <h3 style={{marginLeft: "110px", marginTop: "20px"}}>Food</h3><br/>
+                    <h3 style={{marginLeft: "70px", marginTop: "20px"}}>Food</h3><br/>
                     <ProgressGauge />
                 </div>
                 <div className="bx--col-lg-4">
-                    <h3 style={{marginLeft: "90px", marginTop: "20px"}}>Medical</h3><br/>
+                    <h3 style={{marginLeft: "50px", marginTop: "20px"}}>Medical</h3><br/>
                     <ProgressGauge />
                 </div>
             </div>
