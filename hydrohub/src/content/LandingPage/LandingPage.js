@@ -42,7 +42,7 @@ const Landing = () => (
             {" "}
             <Button kind="tertiary">
               {" "}
-              <NavLink to="/donordashboard" style={{ fontWeight: "bold", color: "red"}}> Donator Dashboard </NavLink>
+              <NavLink to="/donordashboard" style={{ fontWeight: "bold", color: "#4287f5"}}> Donator Dashboard </NavLink>
             </Button>{" "}
           </li>
         </ul>
@@ -55,7 +55,7 @@ const Landing = () => (
             {" "}
             <Button kind="tertiary">
               {" "}
-              <NavLink to="/organizationdashboard" style={{ fontWeight: "bold", color: "red"}}> Organization Dashboard </NavLink>
+              <NavLink to="/organizationdashboard" style={{ fontWeight: "bold", color: "#4287f5"}}> Organization Dashboard </NavLink>
             </Button>{" "}
           </li>
         </ul>
