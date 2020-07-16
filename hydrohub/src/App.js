@@ -17,11 +17,11 @@ import LandingPage from './content/LandingPage';
 
 function App() {
   return (
-      <div className="App">
+      <div>
         {/* <UIShell /> */}
         
         <Router>
-           <Route exact path="/" component={LandingPage} />
+           <div className="App"><Route exact path="/" component={LandingPage} /></div>
            <Route exact path="/organizationdashboard" component={OrgDashboard} />
            <Route exact path="/donordashboard" component={DonorDashboard} />
            {/* <Route exact path="/messages" component={Messages} /> */}

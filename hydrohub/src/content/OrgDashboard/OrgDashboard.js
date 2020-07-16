@@ -1,5 +1,6 @@
 import React from "react"
-import { GaugeChart } from "@carbon/charts-react";
+import { Tile } from "carbon-components-react";
+import { UnorderedList, ListItem } from "carbon-components-react";
 import ProgressGauge from "../../components/ProgressGauge";
 import FilterSelect from "../../components/FilterSelect";
 import UIShell from "../../components/UIShell";
@@ -13,7 +14,7 @@ const OrgDashboard = () => {
             <div className="bx--row org-dashboard__org-name">
                 <div className="bx--col-lg-16">
                     <br/><br/>
-                    <h1 style={{paddingLeft: "75px"}} align="center">Company Name's Dashboard</h1>
+                    <h1 style={{paddingLeft: "75px", marginTop: "50px"}} align="center">Company Name's Dashboard</h1>
                 </div>
             </div>
             <div className="bx--row org-dashboard__total-prog-gauge">
@@ -53,8 +54,27 @@ const OrgDashboard = () => {
             </div>
             <div className="bx--row org-dashboard__filter">
                 <div className="bx--col-lg-8">
-                    <div style={{marginLeft: "15px", marginTop: "20px"}}><FilterSelect /></div>          
+                    <div style={{marginLeft: "15px", marginTop: "20px", marginBottom: "20px"}}><FilterSelect /></div>          
                 </div>
+            </div>
+            <div style={{marginLeft: "15px", marginBottom: "200px"}} className="bx--row donor-dashboard__donator">
+                <Tile>
+                    <div style={{ height: "150px", width: "1000px"}}>
+                        <h2>Jane Doe</h2>
+                        <hr/>
+                        <h4>Contributions:</h4><br/>
+                        <div style={{marginLeft: "20px"}}>
+                            <UnorderedList>
+                                <ListItem>
+                                    20 gallons of water
+                                </ListItem>
+                                <ListItem>
+                                    50 masks
+                                </ListItem>
+                            </UnorderedList>
+                        </div>
+                    </div>
+                </Tile>
             </div>
         </div>
         </div>
