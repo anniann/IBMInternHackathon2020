@@ -13,7 +13,7 @@ const MapChart = () => {
   return (
     <div>
       <ComposableMap>
-        <ZoomableGroup zoom={2}>
+        <ZoomableGroup zoom={1.3}>
           <Geographies geography={geoUrl}>
             {({ geographies }) =>
               geographies.map(geo => (

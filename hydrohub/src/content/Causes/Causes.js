@@ -7,21 +7,31 @@ import UIShell from "../../components/UIShell";
 import Carousel from "react-bootstrap/Carousel";
 import Button from "carbon-components-react/lib/components/Button";
 import { Link } from "react-router-dom";
+import { Search } from "carbon-components-react";
 
 const Causes = () => {
   return (
     <div>
       <UIShell />
-      <div>
-        <div class="container-fluid" style={{marginTop: "70px"}}>
+      <div className="bx--grid bx--grid--full-width search-page">   
+      <div style={{marginLeft: "30px", marginTop: "70px"}} className="bx--row search-page__search-text">
+                    <h1>Search</h1>
+                </div>
+                <div style={{marginLeft: "10px", marginTop: "20px", marginBottom: "10px"}} className="bx--row search-page__search-bar">
+                    <Search 
+                        id="search-1"
+                        placeHolderText="Search for local causes or donors"
+                    />
+                </div>
+        <div class="container-fluid" style={{marginTop: "0px"}}>
           <div className="row title" style={{ marginBottom: "20px", marginLeft: "475px" }}>
             <h1>Top Causes In Your Area</h1>
           </div>
           <div>
           <Carousel>
-            <Carousel.Item style={{ height: "650px" }}>
+            <Carousel.Item style={{ height: "500px" }}>
               <img
-                style={{ height: "650px" }}
+                style={{ height: "500px" }}
                 className="d-block w-100"
                 src={"https://static.wixstatic.com/media/1401c4_02e8094f9a474cc8a3f8a89944405f26~mv2.jpg/v1/fill/w_1000,h_425,al_c,q_90,usm_0.66_1.00_0.01/1401c4_02e8094f9a474cc8a3f8a89944405f26~mv2.jpg"}
               />
@@ -34,9 +44,9 @@ const Causes = () => {
                 </Button>
               </Carousel.Caption>
             </Carousel.Item>
-            <Carousel.Item style={{ height: "650px" }}>
+            <Carousel.Item style={{ height: "500px" }}>
               <img
-                style={{ height: "650px" }}
+                style={{ height: "500px" }}
                 className="d-block w-100"
                 src={"https://www.gannett-cdn.com/-mm-/f05b8de25b946ddf8c9ebf3db9c4a544205fadcb/c=0-56-1600-960/local/-/media/2016/01/21/LAGroup/LafayetteLA/635889778128521907-photos-lafdc5-566kmr1j1ysqzktk2ku.jpg?auto=webp&format=pjpg&width=1200"}
               />
@@ -50,9 +60,9 @@ const Causes = () => {
               </Carousel.Caption>
             </Carousel.Item>
 
-            <Carousel.Item style={{ height: "650px" }}>
+            <Carousel.Item style={{ height: "500px" }}>
               <img
-                style={{ height: "650px" }}
+                style={{ height: "500px" }}
                 className="d-block w-100"
                 src={"https://s3-us-east-2.amazonaws.com/hackensackmeridianhealth/wp-content/uploads/2017/02/20164049/transplant.jpg"}
               />

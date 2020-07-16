@@ -16,7 +16,7 @@ const SearchPage = () => {
                 <div style={{marginLeft: "30px", marginTop: "20px", marginBottom: "10px"}} className="bx--row search-page__search-bar">
                     <Search 
                         id="search-1"
-                        placeHolderText="Search for causes or donors"
+                        placeHolderText="Looking for a specific organization?"
                     />
                 </div>
                 <div style={{marginLeft: "30px", marginBottom: "20px"}} className="bx--row search-page__results-count">
@@ -24,7 +24,7 @@ const SearchPage = () => {
                 </div>
                 <div style={{marginLeft: "30px", marginBottom: "20px"}} className="bx--row search-page__result1">
                     <SearchResult 
-                        title="Local Clinic"
+                        title="Essex County Health Clinic"
                         canHelp="true"
                         distance="2 miles"
                         completion="99%"
@@ -33,7 +33,7 @@ const SearchPage = () => {
                 </div>
                 <div style={{marginLeft: "30px", marginBottom: "20px"}} className="bx--row search-page__result2">
                 <SearchResult 
-                        title="Food Drive"
+                        title="Lily's Food Drive"
                         canHelp="true"
                         distance="8 miles"
                         completion="45%"
@@ -42,7 +42,7 @@ const SearchPage = () => {
                 </div>
                 <div style={{marginLeft: "30px", marginBottom: "20px"}} className="bx--row search-page__result3">
                     <SearchResult 
-                        title="Nursing Home"
+                        title="Richmond Nursing Home"
                         canHelp="false"
                         distance="3.4 miles"
                         completion="10%"
