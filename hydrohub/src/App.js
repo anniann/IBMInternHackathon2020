@@ -1,51 +1,52 @@
 import React from 'react';
 import './App.scss';
-import UIShell from "./components/UIShell";
+import Progress from "./components/UIShell";
 import { Content } from 'carbon-components-react/lib/components/UIShell';
-//import { Route, Switch } from 'react-router-dom';
-import OrgDashboard from './content/OrgDashboard'
-import './content/OrgDashboard/org-dashboard.scss'
-//import './App.scss';
 import {
   BrowserRouter as Router,
   Switch,
   Route,
   Link
 } from "react-router-dom";
+import UIShell from './components/UIShell';
+import OrgDashboard from './content/OrgDashboard'
+import './content/OrgDashboard/org-dashboard.scss'
 
 function App() {
   return (
-    // <div className="App">
-    //   <UIShell />
-    //   <Content>
-    //     <OrgDashboard />
-    //   </Content>
-    // </div>
-    <Router>
-      <div>
-        <nav>
-          <ul>
-            <li>
-              <Link to="/">Home</Link>
-            </li>
-            <li>
-              <Link to="/about">Dashboard</Link>
-            </li>
-          </ul>
-        </nav>
+    <div className="App">
+      
+      <UIShell />
+      <Content>
+        <OrgDashboard />
+      </Content>
+      
+    </div>
+    // <Router>
+    //   <div>
+    //     <nav>
+    //       <ul>
+    //         <li>
+    //           <Link to="/">Home</Link>
+    //         </li>
+    //         <li>
+    //           <Link to="/about">Dashboard</Link>
+    //         </li>
+    //       </ul>
+    //     </nav>
 
-        {/* A <Switch> looks through its children <Route>s and
-            renders the first one that matches the current URL. */}
-        <Switch>
-          <Route path="/Dashboard">
-            <Dashboard />
-          </Route>
-          <Route path="/">
-            <Home />
-          </Route>
-        </Switch>
-      </div>
-    </Router>
+    //     {/* A <Switch> looks through its children <Route>s and
+    //         renders the first one that matches the current URL. */}
+    //     <Switch>
+    //       <Route path="/Dashboard">
+    //         <Dashboard />
+    //       </Route>
+    //       <Route path="/">
+    //         <Home />
+    //       </Route>
+    //     </Switch>
+    //   </div>
+    // </Router>
     );
   }
 
