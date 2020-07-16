@@ -21,7 +21,7 @@ function App() {
         {/* <UIShell /> */}
         
         <Router>
-           <Route exact path="/" component={Home} />
+           <Route exact path="/" component={LandingPage} />
            <Route exact path="/organizationdashboard" component={OrgDashboard} />
            <Route exact path="/donordashboard" component={DonorDashboard} />
            {/* <Route exact path="/messages" component={Messages} /> */}
