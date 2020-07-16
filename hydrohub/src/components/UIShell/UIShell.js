@@ -20,6 +20,7 @@ import {
     SideNavMenu,
     SideNavMenuItem
 } from 'carbon-components-react/lib/components/UIShell';
+import { NavLink } from "react-router-dom";
 
 const UIShell = () => (
     <div className="container">
@@ -33,7 +34,7 @@ const UIShell = () => (
                 isActive={isSideNavExpanded}
                 />
                 <HeaderName href="#" prefix="">
-                HydroHub
+                <NavLink to="/"> HydroHub </NavLink>
                 </HeaderName>
                 <Link>
                 Dashboard
@@ -42,9 +43,9 @@ const UIShell = () => (
                 <HeaderGlobalAction aria-label="Search" onClick={() => {}}>
                     <Search20 />
                 </HeaderGlobalAction>
-                <HeaderGlobalAction aria-label="Messages" onClick={() => {}}>
+                <NavLink to="/messages" style={{ fontWeight: "bold", color: "#4287f5"}}><HeaderGlobalAction aria-label="Messages" onClick={() => {}}>Messages</HeaderGlobalAction></NavLink>
                     <Email20 />
-                </HeaderGlobalAction>
+                
                 <HeaderGlobalAction aria-label="Profile" onClick={() => {}}>
                     <User20 />
                 </HeaderGlobalAction>
@@ -55,7 +56,7 @@ const UIShell = () => (
                     Causes
                     </SideNavLink>
                     <SideNavLink renderIcon={Fade16} href="javascript:void(0)">
-                    World Map
+                    <NavLink to="/world-map"> World Map </NavLink>
                     </SideNavLink>
                     <SideNavLink renderIcon={Fade16} href="javascript:void(0)">
                     Transaction History

@@ -13,6 +13,8 @@ import UIShell from './components/UIShell';
 import OrgDashboard from './content/OrgDashboard';
 import DonorDashboard from './content/DonorDashboard';
 import LandingPage from './content/LandingPage';
+import Messages from './content/Messages'
+import WorldMap from './content/WorldMap'
 
 
 function App() {
@@ -24,7 +26,8 @@ function App() {
            <div className="App"><Route exact path="/" component={LandingPage} /></div>
            <Route exact path="/organizationdashboard" component={OrgDashboard} />
            <Route exact path="/donordashboard" component={DonorDashboard} />
-           {/* <Route exact path="/messages" component={Messages} /> */}
+           <Route exact path="/messages" component={Messages} />
+           <Route exact path="/world-map" component={WorldMap} />
         </Router>
       </div>
 
