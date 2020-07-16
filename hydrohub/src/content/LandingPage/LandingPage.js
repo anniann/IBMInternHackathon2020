@@ -21,7 +21,7 @@ const Landing = () => (
           </li>
           <li>
             {" "}
-            <div className="main-text"> hydrohub</div>{" "}
+            <div className="main-text"> HydroHub</div>{" "}
           </li>
         </ul>
       </section>
