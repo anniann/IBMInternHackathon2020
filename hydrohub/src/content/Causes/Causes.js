@@ -14,8 +14,8 @@ const Causes = () => {
       <UIShell />
       <div>
         <div class="container-fluid" style={{marginTop: "70px"}}>
-          <div className="row title" style={{ marginBottom: "20px", marginLeft: "600px" }}>
-            <h1>Top Causes</h1>
+          <div className="row title" style={{ marginBottom: "20px", marginLeft: "475px" }}>
+            <h1>Top Causes In Your Area</h1>
           </div>
           <div>
           <Carousel>
@@ -29,7 +29,7 @@ const Causes = () => {
               <Carousel.Caption>
                 <h3>Heartland Health Center</h3>
                 <p>Distance: 4 mi</p>
-                <Button kind="tertiary">
+                <Button kind="secondary">
                 <Link to="/organization-dashboard" style={{ fontWeight: "bold", color: "#4287f5"}}> Donate </Link>
                 </Button>
               </Carousel.Caption>
@@ -44,7 +44,7 @@ const Causes = () => {
               <Carousel.Caption>
                 <h3>Lafayette Community Health Care Clinic</h3>
                 <p>Distance: 13 mi</p>
-                <Button kind="tertiary">
+                <Button kind="secondary">
                 <Link to="/organization-dashboard" style={{ fontWeight: "bold", color: "#4287f5"}}> Donate </Link>
                 </Button>
               </Carousel.Caption>
@@ -60,7 +60,7 @@ const Causes = () => {
               <Carousel.Caption>
                 <h3>Hackensack Meridian Health</h3>
                 <p>Distance: 25 mi</p>
-                <Button kind="tertiary">
+                <Button kind="secondary">
                 <Link to="/organization-dashboard" style={{ fontWeight: "bold", color: "#4287f5"}}> Donate </Link>
                 </Button>
               </Carousel.Caption>
