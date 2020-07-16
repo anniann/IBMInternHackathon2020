@@ -33,8 +33,8 @@ const UIShell = () => (
                 onClick={onClickSideNavExpand}
                 isActive={isSideNavExpanded}
                 />
-                <HeaderName href="#" prefix="">
-                <NavLink to="/"> HydroHub </NavLink>
+                <HeaderName href="/" prefix="">
+                <Link to="/" style={{ fontWeight: "bold", color: "#fff"}}> HydroHub </Link>
                 </HeaderName>
                 <HeaderGlobalBar>
                 <NavLink to="/search" style={{ fontWeight: "bold", color: "#4287f5"}}>
