@@ -34,7 +34,7 @@ const UIShell = () => (
                 isActive={isSideNavExpanded}
                 />
                 <HeaderName href="/" prefix="">
-                <Link href="/" style={{ fontWeight: "bold", color: "#fff"}}> HydroHub </Link>
+                <Link href="/" style={{ fontWeight: "bold", color: "#fff"}}>HydroHub</Link>
                 </HeaderName>
                 <HeaderGlobalBar>
                 <Link href="/search" style={{ fontWeight: "bold", color: "#4287f5"}}>

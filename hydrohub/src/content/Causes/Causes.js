@@ -15,7 +15,7 @@ const Causes = () => {
       <UIShell />
       <div className="bx--grid bx--grid--full-width search-page">   
       <div style={{marginLeft: "30px", marginTop: "70px"}} className="bx--row search-page__search-text">
-                    <h1>Search</h1>
+                    <h1>Causes</h1>
                 </div>
                 <div style={{marginLeft: "10px", marginTop: "20px", marginBottom: "10px"}} className="bx--row search-page__search-bar">
                     <Search 
