@@ -34,20 +34,20 @@ const UIShell = () => (
                 isActive={isSideNavExpanded}
                 />
                 <HeaderName href="/" prefix="">
-                <Link to="/" style={{ fontWeight: "bold", color: "#fff"}}> HydroHub </Link>
+                <Link href="/" style={{ fontWeight: "bold", color: "#fff"}}> HydroHub </Link>
                 </HeaderName>
                 <HeaderGlobalBar>
-                <Link to="/search" style={{ fontWeight: "bold", color: "#4287f5"}}>
+                <Link href="/search" style={{ fontWeight: "bold", color: "#4287f5"}}>
                 <HeaderGlobalAction aria-label="Search" onClick={() => {}}>
                     <Search20 />
                 </HeaderGlobalAction>
                 </Link>
-                <Link to="/messages" style={{ fontWeight: "bold", color: "#4287f5"}}>
+                <Link href="/messages" style={{ fontWeight: "bold", color: "#4287f5"}}>
                     <HeaderGlobalAction aria-label="Messages" onClick={() => {}}>
                         <Email20 />
                     </HeaderGlobalAction>
                 </Link>
-                <Link to="/donordashboard" style={{ fontWeight: "bold", color: "#4287f5"}}>
+                <Link href="/donor-dashboard" style={{ fontWeight: "bold", color: "#4287f5"}}>
                     <HeaderGlobalAction aria-label="Profile" onClick={() => {}}>
                     <User20 />
                     </HeaderGlobalAction>
